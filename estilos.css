@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --blanco: #ffffff;
+    --blanco-translucido: #ffffff98;
+    --primary: #bdc0b5;
+    --secondary: #c5c5c5;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* PORTADA */
+
+#portada h1{
+    font-family: "Merriweather", serif;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+#portada h2{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+}
+
+#portada #textos a{
+    display: inline-block;
+    background-color: var(--primary);
+    border: solid 2px transparent;
+    color: var(--blanco);
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+
+#portada #textos a:hover{
+    background-color: var(--blanco-translucido);
+    border: solid 2px var(--primary);
+    color: var(--primary);
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+#portada{
+    min-height: 100vh;
+    background-image: url(img/foto1.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    color: var(--blanco);
+    text-align: center;
+}
+
+#textos{
+    min-height: 85vh;
+    align-content: center;
+    padding: 1em;
+}
+
+/* HEADER */
+
+header{
+    padding: 1em;
+    min-height: 15vh;
+    align-content: center;
+}
+
+#logo{
+    font-family: "Merriweather", serif;
+    color: var(--blanco);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 2em;
+    display: inline-block;
+    margin-bottom: 0.2em;
+}
+
+nav a{
+    color: var(--blanco);
+    margin: 0.5em;
+    font-family: "Raleway", sans-serif;
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* INFORMACION */
+
+#informacion{
+    background-color: var(--primary);
+    min-height: 100vh;
+    align-content: center;
+    margin: auto;
+    color: var(--blanco);
+}
+
+#informacion h2{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+#informacion h3{
+    font-size: 1.5em;
+}
+
+.centrado{
+    max-width: 1200px;
+    margin: auto;
+}
+
+#informacion a{
+    display: inline-block;
+    background-color: var(--blanco);
+    color: var(--primary);
+    padding: 10px;
+    margin-top: 0.5em;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#informacion article{
+    margin-top: 20px;
+}
+
+/* TABLET */
+
+@media all and (min-width:768px){
+
+    #textos{
+      font-size: 1.2em;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo{
+        margin-bottom: 0;
+    }
+
+    #textos{
+      font-size: 1.2em;
+    }
+}
+
+/* LAPTOP */
+@media all and (min-width:1200px){
+
+    #portada h1{
+        font-size: 4em;
+    }
+
+    #portada h2{
+        font-size: 2.5em;
+    }
+}
