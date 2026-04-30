@@ -41,7 +41,7 @@ html{
     border: solid 2px transparent;
     color: var(--blanco);
     padding: 10px;
-    margin: 10px 5px;
+    margin: 5px 5px;
     border-radius: 30px;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
@@ -90,11 +90,12 @@ header{
 
 nav a{
     color: var(--blanco);
-    margin: 0.5em;
+    margin: 0.3em;
     font-family: "Raleway", sans-serif;
     background-color: var(--primary);
-    padding: 10px;
+    padding: 7px;
     border-radius: 10px;
+    display: inline-block;
 }
 
 /* INFORMACION */
@@ -110,6 +111,7 @@ nav a{
 #informacion h2{
     font-size: 3em;
     margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
 
 #informacion h3{
@@ -117,7 +119,7 @@ nav a{
 }
 
 .centrado{
-    max-width: 1200px;
+    max-width: 250px;
     margin: auto;
 }
 
@@ -156,6 +158,10 @@ nav a{
     #textos{
       font-size: 1.2em;
     }
+
+    .centrado{
+        max-width: 650px;
+    }
 }
 
 /* LAPTOP */
@@ -167,5 +173,9 @@ nav a{
 
     #portada h2{
         font-size: 2.5em;
+    }
+
+    .centrado{
+        max-width: 1200px;
     }
 }
