@@ -11,7 +11,7 @@
     --blanco: #ffffff;
     --blanco-translucido: #ffffff98;
     --primary: #bdc0b5;
-    --secondary: #c5c5c5;
+    --secondary: #9fa198;
 }
 
 body{
@@ -105,13 +105,14 @@ nav a{
     min-height: 100vh;
     align-content: center;
     margin: auto;
-    color: var(--blanco);
 }
 
 #informacion h2{
     font-size: 3em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
     margin-top: 0.5em;
+    color: var(--blanco);
+    width: 100%;
 }
 
 #informacion h3{
@@ -125,16 +126,24 @@ nav a{
 
 #informacion a{
     display: inline-block;
-    background-color: var(--blanco);
-    color: var(--primary);
+    background-color: var(--primary);
+    color: var(--blanco);
     padding: 10px;
     margin-top: 0.5em;
     border-radius: 10px;
     font-weight: bold;
+    position: absolute;
+    bottom: 2em;
 }
 
 #informacion article{
     margin-top: 20px;
+    background-color: var(--blanco);
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--primary);
+    position: relative;
+    padding-bottom: 80px;
 }
 
 /* TABLET */
@@ -158,9 +167,31 @@ nav a{
     #textos{
       font-size: 1.2em;
     }
+    
+    #informacion{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        padding: 20px;
+    }
+
+    #informacion article{
+        flex-grow: 1;
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: start;
+        border-bottom: 10px solid var(--secondary);
+    }   
+
+    #informacion h2{
+        text-align: center;
+    }
 
     .centrado{
-        max-width: 650px;
+        max-width: none;
+        margin: 0;
     }
 }
 
@@ -175,7 +206,7 @@ nav a{
         font-size: 2.5em;
     }
 
-    .centrado{
-        max-width: 1200px;
+    #informacion article{
+        flex-basis: 30%;
     }
 }
